@@ -1,0 +1,10 @@
+VAR
+	fb_regulator : FB_Regulator;
+	fb_motor : FB_Motor;
+	speed : REAL;
+	enable : BOOL;
+	int_prev : REAL;
+	mot_prev : REAL;
+	reg_prev : REAL;
+	count : USINT;
+END_VAR

@@ -1,0 +1,21 @@
+Wed Sep 18 18:48:07 2019
+COPYRIGHT (C) B&R Industrial Automation GmbH
+
+Wed Sep 18 18:48:07 2019
+No ARsim registration found!
+
+Wed Sep 18 18:48:07 2019
+InstanceName: 01d56e38770dba70
+
+Wed Sep 18 18:48:07 2019
+WorkingDirectory: C:\projects\KRBO-02-16\Denisov\Lab1\Temp\Simulation\Config1\4PP065_0571_P74\
+
+Wed Sep 18 18:48:07 2019
+COMMAND_COLDSTART
+
+Wed Sep 18 18:48:09 2019
+Version: D4.52
+
+Wed Sep 18 18:51:59 2019
+COMMAND_TERMINATE
+
