@@ -5,10 +5,10 @@
     <ConnectionParameters>/RT=1000 /DAIP=127.0.0.1 /REPO=11160 /ANSL=1 /AM=* /PT=11169</ConnectionParameters>
   </Connection>
   <AsProject>
-    <ApjFullFileName>C:\projects\KRBO-02-16\Denisov\Lab1\Project1.apj</ApjFullFileName>
+    <ApjFullFileName>C:\Projects\Lab1\Project1.apj</ApjFullFileName>
     <ProjectName>Project1</ProjectName>
     <ActiveConfigurationName>Config1</ActiveConfigurationName>
-    <LicenseDataFolder>C:\projects\KRBO-02-16\Denisov\Lab1\Temp\Objects\Config1\4PP065_0571_P74</LicenseDataFolder>
+    <LicenseDataFolder>C:\Projects\Lab1\Temp\Objects\Config1\4PP065_0571_P74</LicenseDataFolder>
   </AsProject>
   <General>
     <DeleteParameterFile>false</DeleteParameterFile>

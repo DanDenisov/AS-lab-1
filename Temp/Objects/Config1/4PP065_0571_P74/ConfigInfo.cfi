@@ -17,9 +17,9 @@
       Source="Prog1"
       Language="ANSIC">
       <File
-        Path="C:\projects\KRBO-02-16\Denisov\Lab1\Logical\Prog1\Types.typ" />
+        Path="C:\Projects\Lab1\Logical\Prog1\Types.typ" />
       <File
-        Path="C:\projects\KRBO-02-16\Denisov\Lab1\Logical\Prog1\Variables.var" />
+        Path="C:\Projects\Lab1\Logical\Prog1\Variables.var" />
     </Task>
   </TaskClass>
   <TaskClass

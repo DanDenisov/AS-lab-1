@@ -47,6 +47,8 @@ typedef struct FB_Regulator
 	/* VAR_OUTPUT (analog) */
 	float u;
 	/* VAR (analog) */
+	unsigned char u_raw;
+	unsigned char count;
 	float k_p;
 	float k_i;
 	struct FB_Integrator integrator;

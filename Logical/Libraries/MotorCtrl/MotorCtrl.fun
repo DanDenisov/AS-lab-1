@@ -36,6 +36,8 @@ FUNCTION_BLOCK FB_Regulator
 		u : REAL;
 	END_VAR
 	VAR
+		u_raw : USINT;
+		count : USINT;
 		k_p : REAL;
 		k_i : REAL;
 		integrator : FB_Integrator;

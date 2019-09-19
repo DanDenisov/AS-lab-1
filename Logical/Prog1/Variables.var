@@ -6,5 +6,4 @@ VAR
 	int_prev : REAL;
 	mot_prev : REAL;
 	reg_prev : REAL;
-	count : USINT;
 END_VAR
