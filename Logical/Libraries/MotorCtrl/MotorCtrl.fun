@@ -24,6 +24,7 @@ FUNCTION_BLOCK FB_Motor
 		Tm : REAL;
 		ke : REAL;
 		dt : REAL;
+		direct : BOOL;
 	END_VAR
 END_FUNCTION_BLOCK
 
@@ -36,13 +37,13 @@ FUNCTION_BLOCK FB_Regulator
 		u : REAL;
 	END_VAR
 	VAR
-		u_raw : USINT;
-		count : USINT;
+		u_raw : REAL;
 		k_p : REAL;
 		k_i : REAL;
 		integrator : FB_Integrator;
 		iyOld : REAL;
 		max_abs_value : REAL;
 		dt : REAL;
+		direct : BOOL;
 	END_VAR
 END_FUNCTION_BLOCK

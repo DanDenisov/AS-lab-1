@@ -38,8 +38,8 @@
 			<Module Name="::ashwd" Type="67" Size="12652" Modified="2019-09-18 18:49:23" Version="1.00" ProjectDependent="1" Reboot="1" />
 		</Memory>
 		<Memory Name="USERROM">
-			<Module Name="::MotorCtrl" Type="18" Size="1384" Modified="2019-09-19 20:37:35" Version="1.00" ProjectDependent="1" />
-			<Module Name="::Prog1" Type="17" Size="2916" Modified="2019-09-19 21:03:42" Version="1.00" ProjectDependent="1" />
+			<Module Name="::MotorCtrl" Type="18" Size="1524" Modified="2019-09-23 11:47:07" Version="1.00" ProjectDependent="1" />
+			<Module Name="::Prog1" Type="17" Size="2984" Modified="2019-09-23 11:48:24" Version="1.00" ProjectDependent="1" />
 			<Module Name="::Role" Type="136" Size="760" Modified="2019-09-18 18:49:22" Version="1.00" ProjectDependent="1" />
 			<Module Name="::User" Type="136" Size="648" Modified="2019-09-18 18:49:22" Version="1.00" ProjectDependent="1" />
 			<Module Name="::ashwac" Type="136" Size="212" Modified="2019-09-18 18:49:22" Version="1.00" ProjectDependent="1" />

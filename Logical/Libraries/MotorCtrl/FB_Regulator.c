@@ -10,24 +10,30 @@
 /* TODO: Add your comment here */
 void FB_Regulator(struct FB_Regulator* inst)
 {
-	//direct circuit
-	inst->u += (inst->k_p * inst->e <= inst->max_abs_value ? inst->k_p * inst->e : inst->max_abs_value) + 
-		inst->k_i * inst->dt * inst->e_prev - 
-		(inst->k_p * inst->e_prev <= inst->max_abs_value ? inst->k_p * inst->e_prev : inst->max_abs_value);
+	if (inst->direct)  //direct circuit
+	{
+		inst->u += (inst->k_p * inst->e <= inst->max_abs_value ? inst->k_p * inst->e : inst->max_abs_value) + 
+			inst->k_i * inst->dt * inst->e_prev - 
+			(inst->k_p * inst->e_prev <= inst->max_abs_value ? inst->k_p * inst->e_prev : inst->max_abs_value);
 	
-	//feedback circuit
-	/*if (inst->count == 0)
-		inst->integrator.in = inst->e * inst->k_i;
-	else
-		inst->integrator.in = inst->e * inst->k_i + (inst->u - inst->u_raw) / inst->dt;
-		
-	FB_Integrator(&inst->integrator);
-	inst->u_raw = (inst->k_p * inst->e <= inst->max_abs_value ? inst->k_p * inst->e : inst->max_abs_value) +
-		inst->integrator.out;
-	inst->u = inst->u_raw;*/
+		//truncating output in case it exceeds max. voltage
+		if (inst->u > inst->max_abs_value)
+			inst->u = inst->max_abs_value;
+	}
+	else  //feedback circuit
+	{
+		inst->u_raw = (inst->k_p * inst->e <= inst->max_abs_value ? inst->k_p * inst->e : inst->max_abs_value) - 
+			(inst->k_p * inst->e_prev <= inst->max_abs_value ? inst->k_p * inst->e_prev : inst->max_abs_value) + 
+			inst->k_i * inst->dt * inst->e + (inst->u - inst->iyOld);  //right part of the equation
 	
-	//truncating output in case it exceeds max. voltage
-	if (inst->u > inst->max_abs_value)
-		inst->u = inst->max_abs_value;
+		if (inst->u_raw <= inst->max_abs_value)
+			inst->u = inst->u_raw;
+		else
+		{
+			inst->u_raw = (inst->u_raw + inst->max_abs_value) / 2;  //truncating-scheme input
+			inst->u = inst->max_abs_value;
+		}
+		inst->iyOld = inst->u - inst->u_raw;  //updating old truncating-scheme output
+	}
 }
 

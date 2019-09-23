@@ -22,5 +22,6 @@
     <DefaultTargetMemory Tasks="UserROM" />
     <Vc FirmwareVersion="V4.52.0" />
     <Safety SafetyRelease="1.10" />
+    <OnlineConfiguration Name="ARsim_TCPIP" DeviceType="TCPIP" DeviceParameters="/IF=tcpip /LOPO=11159 /SA=1" ConnectionParameters="/RT=1000 /AM=* /DAIP=127.0.0.1 /REPO=11160 /ANSL=1" Description="" />
   </Configuration>
 </Cpu>

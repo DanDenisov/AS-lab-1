@@ -18,7 +18,9 @@ void _INIT ProgramInit(void)
 	fb_regulator.max_abs_value = 24;
 	
 	fb_motor.Tm = fb_regulator.k_p / fb_regulator.k_i;
-	fb_motor.ke = 5 * fb_motor.dt * fb_regulator.k_i;
+	fb_motor.ke = 3 * fb_motor.dt * fb_regulator.k_i;
+	
+	fb_motor.direct = fb_regulator.direct = 1;  //specifying motor's & regulator's structure
 }
 
 void _CYCLIC ProgramCyclic(void)
@@ -32,23 +34,14 @@ void _CYCLIC ProgramCyclic(void)
 		//step function (10 secs period)
 		if (count % 50 == 0)
 			speed = speed == 0 ? 2000 : 0;
-	
-		//processing system's output (integrator link in direct circuit)
+				
 		fb_regulator.e = speed - fb_motor.w;
 		fb_regulator.e_prev = reg_prev;
 		FB_Regulator(&fb_regulator);
-		fb_motor.u = mot_prev;
+		fb_motor.u = fb_motor.direct ? mot_prev : fb_regulator.u;
 		FB_Motor(&fb_motor);
-		
-		//processing system's output (integrator link in feedback circuit)
-		/*fb_regulator.e = speed - fb_motor.w;
-		fb_regulator.e_prev = 0;
-		fb_regulator.count = count;
-		FB_Regulator(&fb_regulator);
-		fb_motor.u = fb_regulator.u;
-		FB_Motor(&fb_motor);*/
 	
-		//updating blocks' "previous" inputs
+		//updating blocks' previous inputs
 		//(current input on step [k] equals previous input on step [k + 1])
 		reg_prev = fb_regulator.e;
 		mot_prev = fb_regulator.u;
