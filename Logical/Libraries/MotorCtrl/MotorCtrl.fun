@@ -45,5 +45,6 @@ FUNCTION_BLOCK FB_Integrator
 	END_VAR
 	VAR
 		dt : REAL;
+		direct : BOOL;
 	END_VAR
 END_FUNCTION_BLOCK

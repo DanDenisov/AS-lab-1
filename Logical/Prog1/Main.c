@@ -22,13 +22,17 @@ void _INIT ProgramInit(void)
 	fb_motor.dt = fb_regulator.dt = 0.002;
 	fb_motor.Tm = fb_regulator.k_p / fb_regulator.k_i;
 	fb_motor.ke = 3 * fb_motor.dt * fb_regulator.k_i;
-	fb_motor.direct = fb_regulator.direct = 0;  //specifying motor's & regulator's structure
+	fb_motor.direct = fb_regulator.direct = 1;  //specifying motor's & regulator's structure
 	
 	//2nd motor
 	fb_motor2.dt = fb_motor.dt;
 	fb_motor2.Tm = fb_motor.Tm;
 	fb_motor2.ke = fb_motor.ke;
 	fb_motor2.direct = fb_motor.direct;
+	
+	fb_motor.integrator.dt = fb_regulator.integrator.dt = 0.002;
+	fb_motor2.integrator.dt = fb_motor.integrator.dt;
+	fb_motor.integrator.direct = fb_regulator.integrator.direct = fb_motor2.integrator.direct = 1;
 }
 
 void _CYCLIC ProgramCyclic(void)

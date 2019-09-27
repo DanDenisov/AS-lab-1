@@ -136,19 +136,19 @@
     Path="C:\Projects\Lab1\Logical\Libraries\MotorCtrl\MotorCtrl.fun"
     LogicalPath="Libraries.MotorCtrl.MotorCtrl.fun"
     Type="File"
-    LastWriteTime="132140619149657422"
+    LastWriteTime="132140772619813316"
     Private="false" />
   <Object
     Path="C:\Projects\Lab1\Logical\Libraries\MotorCtrl\FB_Regulator.c"
     LogicalPath="Libraries.MotorCtrl.FB_Regulator.c"
     Type="File"
-    LastWriteTime="132137023740000000"
+    LastWriteTime="132140783677936130"
     Private="false" />
   <Object
     Path="C:\Projects\Lab1\Logical\Libraries\MotorCtrl\FB_Motor.c"
     LogicalPath="Libraries.MotorCtrl.FB_Motor.c"
     Type="File"
-    LastWriteTime="132140629581406630"
+    LastWriteTime="132140756835685491"
     Private="false" />
   <Object
     Path="C:\Projects\Lab1\Logical\Libraries\MotorCtrl\FB_Integrator.c"
@@ -165,7 +165,7 @@
     Path="C:\Projects\Lab1\Logical\Prog1\Main.c"
     LogicalPath="Prog1.Main.c"
     Type="File"
-    LastWriteTime="132140619149012748"
+    LastWriteTime="132140779155840800"
     Private="false" />
   <Object
     Path="C:\Projects\Lab1\Logical\Prog1\Types.typ"
@@ -177,7 +177,7 @@
     Path="C:\Projects\Lab1\Logical\Prog1\Variables.var"
     LogicalPath="Prog1.Variables.var"
     Type="File"
-    LastWriteTime="132140619587597017"
+    LastWriteTime="132140743293539057"
     Private="true" />
   <Object
     Path="C:\Projects\Lab1\Physical\Config1\Config.pkg"
@@ -188,7 +188,7 @@
     Path="C:\Projects\Lab1\Physical\Config1\Hardware.hw"
     LogicalPath="Config1.Hardware.hw"
     Type="File"
-    LastWriteTime="132137236540000000"
+    LastWriteTime="132140765837508887"
     Private="false" />
   <Object
     Path="C:\Projects\Lab1\Physical\Config1\Hardware.hwl"

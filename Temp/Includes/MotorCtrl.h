@@ -23,6 +23,8 @@ typedef struct FB_Integrator
 	float out;
 	/* VAR (analog) */
 	float dt;
+	/* VAR (digital) */
+	plcbit direct;
 } FB_Integrator_typ;
 
 typedef struct FB_Regulator

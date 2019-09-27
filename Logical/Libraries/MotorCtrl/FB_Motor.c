@@ -10,7 +10,7 @@
 /* TODO: Add your comment here */
 void FB_Motor(struct FB_Motor* inst)
 {
-	if (inst->direct)  //direct circuit
+	/*if (inst->direct)  //direct circuit
 	{
 		inst->w = inst->w * (inst->Tm - inst->dt) / inst->Tm + 
 			inst->u * inst->dt / (inst->ke * inst->Tm);
@@ -19,7 +19,11 @@ void FB_Motor(struct FB_Motor* inst)
 	{
 		inst->w = inst->w * inst->Tm / (inst->Tm + inst->dt) + 
 			inst->u * inst->dt / (inst->ke * (inst->Tm + inst->dt));
-	}
+	}*/
+	
+	inst->integrator.in = (inst->u / inst->ke - inst->w) / inst->Tm;
+	FB_Integrator(&inst->integrator);
+	inst->w = inst->integrator.out;
 	
 	inst->integrator.in = inst->w;
 	FB_Integrator(&inst->integrator);

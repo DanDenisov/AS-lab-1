@@ -1,13 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <?AutomationStudio Version=4.5.2.102?>
 <State Top="0" Left="0" Width="0" Height="0" WindowState="Normal" xmlns="http://br-automation.co.at/AS/State">
-  <TextEdit ID="C:\Projects\Lab1\Logical\Prog1\Main.c" CaretLine="13" CaretColumn="11" FirstVisibleLine="1">
+  <TextEdit ID="C:\Projects\Lab1\Logical\Prog1\Main.c" CaretLine="67" CaretColumn="18" FirstVisibleLine="45">
     <Bookmarks />
   </TextEdit>
-  <TextEdit ID="C:\Projects\Lab1\Logical\Libraries\MotorCtrl\FB_Regulator.c" CaretLine="23" CaretColumn="26" FirstVisibleLine="1">
+  <TextEdit ID="C:\Projects\Lab1\Logical\Libraries\MotorCtrl\FB_Regulator.c" CaretLine="47" CaretColumn="38" FirstVisibleLine="19">
     <Bookmarks />
   </TextEdit>
-  <TextEdit ID="C:\Projects\Lab1\Logical\Libraries\MotorCtrl\FB_Motor.c" CaretLine="24" CaretColumn="32" FirstVisibleLine="1">
+  <TextEdit ID="C:\Projects\Lab1\Logical\Libraries\MotorCtrl\FB_Motor.c" CaretLine="25" CaretColumn="35" FirstVisibleLine="1">
+    <Bookmarks />
+  </TextEdit>
+  <TextEdit ID="C:\Projects\Lab1\Logical\Libraries\MotorCtrl\FB_Integrator.c" CaretLine="13" CaretColumn="35" FirstVisibleLine="1">
     <Bookmarks />
   </TextEdit>
 </State>
