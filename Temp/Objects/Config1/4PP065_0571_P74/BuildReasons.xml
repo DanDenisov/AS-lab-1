@@ -1,31 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BuildReasons>
-  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\4pp065_0571_p74\motorctrl\fb_regulator.c.o">
-    <BuildReason>Prerequiste "$(AS_PROJECT_PATH)\logical\libraries\motorctrl\fb_regulator.c" differs.
-</BuildReason>
-  </Rule>
   <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\4pp065_0571_p74\prog1\main.c.o">
     <BuildReason>Prerequiste "$(AS_PROJECT_PATH)\logical\prog1\main.c" differs.
-</BuildReason>
-  </Rule>
-  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\4pp065_0571_p74\motorctrl\a.out">
-    <BuildReason>Prerequiste "$(AS_PROJECT_PATH)\temp\objects\config1\4pp065_0571_p74\motorctrl\fb_regulator.c.o" differs.
 </BuildReason>
   </Rule>
   <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\4pp065_0571_p74\prog1\_bur_pvdef.c.o">
     <BuildReason>Prerequiste "$(AS_PROJECT_PATH)\temp\objects\config1\4pp065_0571_p74\prog1\main.c.o" differs.
 </BuildReason>
   </Rule>
-  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\4pp065_0571_p74\motorctrl\motorctrl.ox">
-    <BuildReason>Prerequiste "$(AS_PROJECT_PATH)\temp\objects\config1\4pp065_0571_p74\motorctrl\a.out" differs.
-</BuildReason>
-  </Rule>
   <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\4pp065_0571_p74\prog1\a.out">
     <BuildReason>Prerequiste "$(AS_PROJECT_PATH)\temp\objects\config1\4pp065_0571_p74\prog1\main.c.o" differs.
-</BuildReason>
-  </Rule>
-  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\4pp065_0571_p74\motorctrl.br">
-    <BuildReason>Prerequiste "$(AS_PROJECT_PATH)\temp\objects\config1\4pp065_0571_p74\motorctrl\motorctrl.ox" differs.
 </BuildReason>
   </Rule>
   <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\4pp065_0571_p74\prog1\prog1.ox">

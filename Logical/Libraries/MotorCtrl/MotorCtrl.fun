@@ -14,8 +14,6 @@ FUNCTION_BLOCK FB_Regulator
 		integrator : FB_Integrator;
 		iyOld : REAL;
 		max_abs_value : REAL;
-		dt : REAL;
-		direct : BOOL;
 	END_VAR
 END_FUNCTION_BLOCK
 
@@ -29,10 +27,10 @@ FUNCTION_BLOCK FB_Motor
 	END_VAR
 	VAR
 		integrator : FB_Integrator;
+		integrator_phi : FB_Integrator;
 		Tm : REAL;
 		ke : REAL;
-		dt : REAL;
-		direct : BOOL;
+		enable_reg : BOOL;
 	END_VAR
 END_FUNCTION_BLOCK
 

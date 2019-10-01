@@ -11,57 +11,67 @@ void _INIT ProgramInit(void)
 	enable = count = 0;
 	
 	//setting
-	speed = 0;
+	speed = 60;
 	
 	//regulator
-	fb_regulator.k_p = 0.0064;
-	fb_regulator.k_i = 0.16;
-	fb_regulator.max_abs_value = 24;
+	regulators[0].integrator.dt = 0.002;
+	regulators[0].k_p = 0.0064;
+	regulators[0].k_i = 0.16;
+	regulators[0].max_abs_value = 24;
 	
 	//1st motor
-	fb_motor.dt = fb_regulator.dt = 0.002;
-	fb_motor.Tm = fb_regulator.k_p / fb_regulator.k_i;
-	fb_motor.ke = 3 * fb_motor.dt * fb_regulator.k_i;
-	fb_motor.direct = fb_regulator.direct = 1;  //specifying motor's & regulator's structure
+	motors[0].integrator.dt = motors[0].integrator_phi.dt = regulators[0].integrator.dt;
+	motors[0].Tm = regulators[0].k_p / regulators[0].k_i;
+	motors[0].ke = 3 * motors[0].integrator.dt * regulators[0].k_i;
+	motors[0].enable_reg = 1;
 	
 	//2nd motor
-	fb_motor2.dt = fb_motor.dt;
-	fb_motor2.Tm = fb_motor.Tm;
-	fb_motor2.ke = fb_motor.ke;
-	fb_motor2.direct = fb_motor.direct;
+	motors[1].integrator.dt = motors[1].integrator_phi.dt = motors[0].integrator.dt;
+	motors[1].Tm = motors[0].Tm;
+	motors[1].ke = motors[0].ke;
+	motors[1].enable_reg = 0;
 	
-	fb_motor.integrator.dt = fb_regulator.integrator.dt = 0.002;
-	fb_motor2.integrator.dt = fb_motor.integrator.dt;
-	fb_motor.integrator.direct = fb_regulator.integrator.direct = fb_motor2.integrator.direct = 1;
+	//integrators' structure
+	motors[0].integrator.direct = motors[0].integrator_phi.direct = regulators[0].integrator.direct = 
+		motors[1].integrator.direct = motors[1].integrator_phi.direct = 1;
 }
 
 void _CYCLIC ProgramCyclic(void)
 {
-	//delaying enabling
-	if (count >= 25)
-		enable = 1;
+	//switching system state
+	if (count % 100 == 0)
+		enable = !enable;
 	
+	//switching input
 	if (enable)
+		speed = 60;
+	else
+		speed = 0;
+	
+	//updating system states
+	int i;
+	for (i = 0; i < 2; i++)
 	{
-		//step function (5 secs period)
-		if (count % 50 == 0)
-			speed = speed == 0 ? 60 : 0;
+		if (motors[i].enable_reg)
+		{
+			//motor with regulator
+			regulators[i].e = speed - motors[i].w;
+			regulators[i].e_prev = reg_prevs[i];
+			FB_Regulator(&regulators[i]);
+			motors[i].u = motors[i].integrator.direct ? mot_prevs[i] : regulators[i].u;
+			FB_Motor(&motors[i]);
 		
-		//motor without regulator
-		fb_motor2.u = fb_motor2.direct ? mot2_prev : speed - fb_motor2.w;
-		FB_Motor(&fb_motor2);
-		
-		mot2_prev = speed - fb_motor2.w;  //updating previous inputs
-		
-		//motor with regulator
-		fb_regulator.e = speed - fb_motor.w;
-		fb_regulator.e_prev = reg_prev;
-		FB_Regulator(&fb_regulator);
-		fb_motor.u = fb_motor.direct ? mot_prev : fb_regulator.u;
-		FB_Motor(&fb_motor);
-		
-		reg_prev = fb_regulator.e;  //updating previous inputs
-		mot_prev = fb_regulator.u;
+			reg_prevs[i] = regulators[i].e;  //updating previous inputs
+			mot_prevs[i] = regulators[i].u;
+		}
+		else
+		{
+			//motor without regulator
+			motors[i].u = motors[i].integrator.direct ? mot_prevs[i] : speed * motors[i].ke;
+			FB_Motor(&motors[i]);
+			
+			mot_prevs[i] = speed * motors[i].ke;  //updating previous inputs
+		}
 	}
 
 	//updating state

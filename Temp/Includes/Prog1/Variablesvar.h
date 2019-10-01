@@ -1,8 +1,8 @@
 /* Automation Studio generated header file */
 /* Do not edit ! */
 
-#ifndef _BUR_1569595857_1_
-#define _BUR_1569595857_1_
+#ifndef _BUR_1569954224_2_
+#define _BUR_1569954224_2_
 
 #include <bur/plctypes.h>
 
@@ -13,6 +13,10 @@
 
 
 /* Variables */
+_BUR_LOCAL float mot_prevs[2];
+_BUR_LOCAL float reg_prevs[2];
+_BUR_LOCAL struct FB_Regulator regulators[2];
+_BUR_LOCAL struct FB_Motor motors[2];
 _BUR_LOCAL float reg_prev;
 _BUR_LOCAL float mot2_prev;
 _BUR_LOCAL float mot_prev;
@@ -37,5 +41,5 @@ __asm__(".ascii \"iecfile \\\"Logical/Libraries/MotorCtrl/MotorCtrl.fun\\\" scop
 __asm__(".previous");
 
 
-#endif /* _BUR_1569595857_1_ */
+#endif /* _BUR_1569954224_2_ */
 

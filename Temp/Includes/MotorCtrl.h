@@ -41,9 +41,6 @@ typedef struct FB_Regulator
 	struct FB_Integrator integrator;
 	float iyOld;
 	float max_abs_value;
-	float dt;
-	/* VAR (digital) */
-	plcbit direct;
 } FB_Regulator_typ;
 
 typedef struct FB_Motor
@@ -55,11 +52,11 @@ typedef struct FB_Motor
 	float phi;
 	/* VAR (analog) */
 	struct FB_Integrator integrator;
+	struct FB_Integrator integrator_phi;
 	float Tm;
 	float ke;
-	float dt;
 	/* VAR (digital) */
-	plcbit direct;
+	plcbit enable_reg;
 } FB_Motor_typ;
 
 
