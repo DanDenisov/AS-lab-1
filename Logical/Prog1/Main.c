@@ -10,9 +10,6 @@ void _INIT ProgramInit(void)
 	//state variables
 	enable = count = 0;
 	
-	//setting
-	speed = 60;
-	
 	//regulator
 	regulators[0].integrator.dt = 0.002;
 	regulators[0].k_p = 0.0064;
@@ -33,18 +30,18 @@ void _INIT ProgramInit(void)
 	
 	//integrators' structure
 	motors[0].integrator.direct = motors[0].integrator_phi.direct = regulators[0].integrator.direct = 
-		motors[1].integrator.direct = motors[1].integrator_phi.direct = 1;
+		motors[1].integrator.direct = motors[1].integrator_phi.direct = 0;
 }
 
 void _CYCLIC ProgramCyclic(void)
 {
 	//switching system state
-	if (count % 100 == 0)
+	if (count % 100 == 0 && count != 0)
 		enable = !enable;
 	
 	//switching input
 	if (enable)
-		speed = 60;
+		speed = 3000;
 	else
 		speed = 0;
 	

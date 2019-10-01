@@ -4,31 +4,31 @@
     <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\4pp065_0571_p74\iomap.iom" LastWriteTime="2019-09-23 11:52:54" />
     <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\4pp065_0571_p74\pvmap.vvm" LastWriteTime="2019-09-23 11:52:54" />
     <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\4pp065_0571_p74\channelconfiguration.xml" LastWriteTime="2019-09-23 11:52:54" />
-    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\hardware.hw" LastWriteTime="2019-10-01 20:34:32" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\hardware.hw" LastWriteTime="2019-10-01 23:47:58" />
     <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\4pp065_0571_p74\cpu.sw" LastWriteTime="2019-09-23 11:52:54" />
     <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\Config1\4PP065_0571_P74\IoMap.iom&quot; &quot;$(AS_PROJECT_PATH)\Physical\Config1\4PP065_0571_P74\PvMap.vvm&quot; -m &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\4PP065_0571_P74\ConfigInfo.cfi&quot; -g &quot;$(AS_PROJECT_PATH)\Temp\Objects\Declarations.lst&quot; -x &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\4PP065_0571_P74\ChannelConfiguration.xml&quot; -v V1.00.0 -f &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\4PP065_0571_P74&quot; -iomap -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\4PP065_0571_P74\iomap.br&quot; -T SG4 -B D4.52 -P &quot;$(AS_PROJECT_PATH)&quot; -s &quot;Config1.4PP065_0571_P74&quot;" />
   </Rule>
   <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\4pp065_0571_p74\ashwac.br">
-    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\hardware.hw" LastWriteTime="2019-10-01 20:34:32" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\hardware.hw" LastWriteTime="2019-10-01 23:47:58" />
     <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\Config1\Hardware.hw&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\4PP065_0571_P74\ashwac.br&quot; -L &quot;AsIecCon: V*, astime: V*, MotorCtrl: V*, operator: V*, runtime: V*&quot; -c &quot;Config1&quot; -Z &quot;UnitSystem: n.d, TextSystem: n.d, ProgrammingSystem: n.d, Connectivity: n.d, AAS: n.d&quot; -M IA32 -B D4.52 -P &quot;$(AS_PROJECT_PATH)&quot; -s &quot;Config1&quot; -T SG4 " />
   </Rule>
   <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\4pp065_0571_p74\sysconf.br">
-    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\hardware.hw" LastWriteTime="2019-10-01 20:34:32" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\hardware.hw" LastWriteTime="2019-10-01 23:47:58" />
     <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\Config1\Hardware.hw&quot;  -c &quot;Config1&quot; -sysconf -S &quot;4PP065_0571_P74&quot; -F 1.10 -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\4PP065_0571_P74\sysconf.br&quot; -T SG4 -B D4.52 -P &quot;$(AS_PROJECT_PATH)&quot; -s &quot;Config1&quot; " />
   </Rule>
   <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\4pp065_0571_p74\asfw.br">
-    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\hardware.hw" LastWriteTime="2019-10-01 20:34:32" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\hardware.hw" LastWriteTime="2019-10-01 23:47:58" />
     <Prerequisite ID="c:\brautomation\as45\upgrades\modified.txt" LastWriteTime="2018-12-17 12:20:22" />
     <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\Config1\Hardware.hw&quot;  -v V1.00.0 -S &quot;4PP065_0571_P74&quot; -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\4PP065_0571_P74\asfw.br&quot; -T SG4 -B D4.52 -P &quot;$(AS_PROJECT_PATH)&quot; -c &quot;Config1&quot; -zip -s &quot;Config1&quot; -firmware -F 1.10 " />
   </Rule>
   <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\4pp065_0571_p74\ashwd.br">
-    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\hardware.hw" LastWriteTime="2019-10-01 20:34:32" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\hardware.hw" LastWriteTime="2019-10-01 23:47:58" />
     <Prerequisite ID="c:\brautomation\as45\upgrades\modified.txt" LastWriteTime="2018-12-17 12:20:22" />
     <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\Config1\Hardware.hw&quot;  -v V1.00.0 -S &quot;4PP065_0571_P74&quot; -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\4PP065_0571_P74\ashwd.br&quot; -T SG4 -B D4.52 -P &quot;$(AS_PROJECT_PATH)&quot; -c &quot;Config1&quot; -zip -s &quot;Config1&quot; -hwd -F 1.10 " />
   </Rule>
   <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\4pp065_0571_p74\arconfig.br">
     <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\4pp065_0571_p74\iomap.iom" LastWriteTime="2019-09-23 11:52:54" />
-    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\hardware.hw" LastWriteTime="2019-10-01 20:34:32" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\hardware.hw" LastWriteTime="2019-10-01 23:47:58" />
     <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\Config1\4PP065_0571_P74\IoMap.iom&quot; &quot;$(AS_PROJECT_PATH)\Physical\Config1\Hardware.hw&quot;  -arconfig -C &quot;/RT=1000 /AM=* /DAIP=127.0.0.1 /REPO=11160 /ANSL=1&quot; -D &quot;/IF=tcpip /LOPO=11159 /SA=1&quot; -c &quot;Config1&quot; -v V1.00.0 -S &quot;4PP065_0571_P74&quot; -F 1.10 -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\4PP065_0571_P74\arconfig.br&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\4PP065_0571_P74\ChannelConfiguration.xml&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\4PP065_0571_P74\HardwareConfiguration.xml&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\4PP065_0571_P74\ReActionTechnologyConfiguration.xml&quot; -T SG4 -B D4.52 -P &quot;$(AS_PROJECT_PATH)&quot; -s &quot;Config1&quot; " />
   </Rule>
   <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\4pp065_0571_p74\udbdef.br">
@@ -56,10 +56,10 @@
     <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\Config1\4PP065_0571_P74\AccessAndSecurity\UserRoleSystem\User.user&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\4PP065_0571_P74\User.br&quot; -zip -B D4.52 -F 1.10 -z n.d -P &quot;$(AS_PROJECT_PATH)&quot; -c &quot;Config1&quot; " />
   </Rule>
   <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\4pp065_0571_p74\prog1.br">
-    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\4pp065_0571_p74\prog1\prog1.ox" LastWriteTime="2019-10-01 22:15:14" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\4pp065_0571_p74\prog1\prog1.ox" LastWriteTime="2019-10-02 00:50:06" />
     <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\4pp065_0571_p74\cpu.per" LastWriteTime="2019-09-23 11:52:54" />
     <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\motorctrl\motorctrl.fun" LastWriteTime="2019-10-01 21:05:54" />
-    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\prog1\variables.var" LastWriteTime="2019-10-01 21:17:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\prog1\variables.var" LastWriteTime="2019-10-01 22:18:40" />
     <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.var" LastWriteTime="2019-09-23 11:52:54" />
     <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\4PP065_0571_P74\Prog1\Prog1.ox&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\4PP065_0571_P74\Prog1.br&quot; -v V1.00.0 -f &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\4PP065_0571_P74\NT.ofs&quot; -offsetLT &quot;$(AS_PROJECT_PATH)\Binaries\Config1\4PP065_0571_P74\LT.ofs&quot; -T SG4 -M IA32 -B D4.52 -G V4.1.2  -extConstants -r Cyclic5 -p 2 -s &quot;Prog1&quot; -L &quot;AsIecCon: V*, astime: V*, MotorCtrl: V*, operator: V*, runtime: V*&quot; -P &quot;$(AS_PROJECT_PATH)&quot; " />
     <AdditionalBuildTrigger Key="VolatileMemory" Value="65535" />
@@ -68,24 +68,24 @@
     <AdditionalBuildTrigger Key="RemanentMemory" Value="4096" />
   </Rule>
   <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\4pp065_0571_p74\prog1\prog1.ox">
-    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\4pp065_0571_p74\prog1\a.out" LastWriteTime="2019-10-01 22:15:14" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\4pp065_0571_p74\prog1\a.out" LastWriteTime="2019-10-02 00:50:06" />
     <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\motorctrl\motorctrl.fun" LastWriteTime="2019-10-01 21:05:54" />
-    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\prog1\variables.var" LastWriteTime="2019-10-01 21:17:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\prog1\variables.var" LastWriteTime="2019-10-01 22:18:40" />
     <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.var" LastWriteTime="2019-09-23 11:52:54" />
     <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\4PP065_0571_P74\Prog1\a.out&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\4PP065_0571_P74\Prog1\Prog1.ox&quot; -T SG4 -r Cyclic5 -G V4.1.2  -B D4.52 " />
   </Rule>
   <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\4pp065_0571_p74\prog1\a.out">
-    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\4pp065_0571_p74\prog1\main.c.o" LastWriteTime="2019-10-01 22:15:12" />
-    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\4pp065_0571_p74\prog1\_bur_pvdef.c.o" LastWriteTime="2019-10-01 22:15:12" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\4pp065_0571_p74\prog1\main.c.o" LastWriteTime="2019-10-02 00:50:06" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\4pp065_0571_p74\prog1\_bur_pvdef.c.o" LastWriteTime="2019-10-02 00:50:06" />
     <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\motorctrl\motorctrl.fun" LastWriteTime="2019-10-01 21:05:54" />
-    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\prog1\variables.var" LastWriteTime="2019-10-01 21:17:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\prog1\variables.var" LastWriteTime="2019-10-01 22:18:40" />
     <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.var" LastWriteTime="2019-09-23 11:52:54" />
     <CommandLine Parameter=" -link &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\4PP065_0571_P74\Prog1\Main.c.o&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\4PP065_0571_P74\Prog1\_bur_pvdef.c.o&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\4PP065_0571_P74\Prog1\a.out&quot; -G V4.1.2  -T SG4 -M IA32 &quot;-Wl,$(AS_PROJECT_PATH)\Temp\Archives\Config1\4PP065_0571_P74\libMotorCtrl.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\D0452\SG4\IA32\libAsIecCon.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\D0452\SG4\IA32\libastime.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\D0452\SG4\IA32\libruntime.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\D0452\SG4\IA32\liboperator.a&quot; -specs=I386specs_brelf" />
   </Rule>
   <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\4pp065_0571_p74\prog1\main.c.o">
-    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\prog1\main.c" LastWriteTime="2019-10-01 22:14:48" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\prog1\main.c" LastWriteTime="2019-10-02 00:49:54" />
     <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\motorctrl\motorctrl.fun" LastWriteTime="2019-10-01 21:05:54" />
-    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\prog1\variables.var" LastWriteTime="2019-10-01 21:17:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\prog1\variables.var" LastWriteTime="2019-10-01 22:18:40" />
     <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.var" LastWriteTime="2019-09-23 11:52:54" />
     <Prerequisite ID="c:\brautomation\as45\as\gnuinst\v4.1.2\i386-elf\include\bur\plctypes.h" LastWriteTime="2018-11-12 17:25:24" />
     <Prerequisite ID="c:\brautomation\as45\as\gnuinst\v4.1.2\i386-elf\include\bur\plc.h" LastWriteTime="2018-11-12 17:25:24" />
@@ -94,9 +94,9 @@
   </Rule>
   <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\4pp065_0571_p74\prog1\_bur_pvdef.c.o">
     <Prerequisite ID="c:\brautomation\as45\as\gnuinst\v4.1.2\i386-elf\include\bur\_bur_pvdef.c" LastWriteTime="2018-11-12 17:25:24" />
-    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\4pp065_0571_p74\prog1\main.c.o" LastWriteTime="2019-10-01 22:15:12" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\4pp065_0571_p74\prog1\main.c.o" LastWriteTime="2019-10-02 00:50:06" />
     <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\motorctrl\motorctrl.fun" LastWriteTime="2019-10-01 21:05:54" />
-    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\prog1\variables.var" LastWriteTime="2019-10-01 21:17:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\prog1\variables.var" LastWriteTime="2019-10-01 22:18:40" />
     <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.var" LastWriteTime="2019-09-23 11:52:54" />
     <Prerequisite ID="c:\brautomation\as45\as\gnuinst\v4.1.2\i386-elf\include\bur\plctypes.h" LastWriteTime="2018-11-12 17:25:24" />
     <Prerequisite ID="c:\brautomation\as45\as\gnuinst\v4.1.2\i386-elf\include\bur\plc.h" LastWriteTime="2018-11-12 17:25:24" />
@@ -156,7 +156,7 @@
     <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\4pp065_0571_p74\tcdata.br" LastWriteTime="2019-09-27 19:12:08" />
     <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\4pp065_0571_p74\role.br" LastWriteTime="2019-09-23 11:52:54" />
     <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\4pp065_0571_p74\user.br" LastWriteTime="2019-09-23 11:52:54" />
-    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\4pp065_0571_p74\prog1.br" LastWriteTime="2019-10-01 22:15:14" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\4pp065_0571_p74\prog1.br" LastWriteTime="2019-10-02 00:50:06" />
     <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\4pp065_0571_p74\motorctrl.br" LastWriteTime="2019-10-01 21:23:46" />
     <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\4pp065_0571_p74\cpu.sw" LastWriteTime="2019-09-23 11:52:54" />
     <CommandLine Parameter=" &quot;$(AS_PROJECT_PATH)\Project1.apj&quot; -t &quot;$(AS_PROJECT_PATH)\Temp&quot; -o &quot;$(AS_PROJECT_PATH)\Binaries&quot; -c &quot;Config1&quot; -i &quot;C:\BrAutomation\AS45&quot; -S &quot;4PP065_0571_P74&quot; -A &quot;PP065&quot; -pil -swFiles &quot;$(AS_PROJECT_PATH)\Physical\Config1\4PP065_0571_P74\Cpu.sw&quot; -Z &quot;UnitSystem: n.d, TextSystem: n.d, ProgrammingSystem: n.d, Connectivity: n.d, AAS: n.d&quot; -C &quot;/RT=1000 /AM=* /DAIP=127.0.0.1 /REPO=11160 /ANSL=1&quot; -D &quot;/IF=tcpip /LOPO=11159 /SA=1&quot; -M IA32 -T SG4" />

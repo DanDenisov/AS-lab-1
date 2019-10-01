@@ -165,7 +165,7 @@
     Path="C:\Projects\Lab1\Logical\Prog1\Main.c"
     LogicalPath="Prog1.Main.c"
     Type="File"
-    LastWriteTime="132144308884169563"
+    LastWriteTime="132144401957879848"
     Private="false" />
   <Object
     Path="C:\Projects\Lab1\Logical\Prog1\Types.typ"
@@ -177,7 +177,7 @@
     Path="C:\Projects\Lab1\Logical\Prog1\Variables.var"
     LogicalPath="Prog1.Variables.var"
     Type="File"
-    LastWriteTime="132144274746038245"
+    LastWriteTime="132144311203926043"
     Private="true" />
   <Object
     Path="C:\Projects\Lab1\Physical\Config1\Config.pkg"
@@ -188,7 +188,7 @@
     Path="C:\Projects\Lab1\Physical\Config1\Hardware.hw"
     LogicalPath="Config1.Hardware.hw"
     Type="File"
-    LastWriteTime="132144248732951022"
+    LastWriteTime="132144364782766496"
     Private="false" />
   <Object
     Path="C:\Projects\Lab1\Physical\Config1\Hardware.hwl"
